@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="src/css/style.css">
+    <title>DogHub</title>
+</head>
+<body>
+    <!-- navbar -->
+    <div id="navbar">
+        <div class="container">
+            <div class="navbar">
+                 <div class="nav_logo">
+                    <img src="./src/public/svgs/logo.svg" alt="svg"> 
+                    <p>DogHub</p>               
+                </div>
+                <div id="update" class="update-date">
+                    <span>January 15, 2020</span>
+                </div>
+            </div>
+        </div>
+    </div><!--end nav-->
+
+
+    <!-- Dog breeds -->
+    <section>
+        <div class="container">
+            <div class="dog_breeds-icons">
+                <img src="./src/public/svgs/dog1.svg" alt="svg">
+                <h2>Dog Breeds</h2>
+            </div>
+        </div>
+    </section><!--end dog breeds-->
+
+
+    <!-- select dropdown -->
+    <section>
+        <div id="select-dropdown">
+            <div class="container">
+               <form class="dog_breeds_dropdown">
+                    <select class="breed-select" id="breeds"> 
+                       <option>Breeds</option>
+                    </select>
+                    <select>
+                        <option>Sub-Breeds</option>
+                    </select>
+                    <select class="display-Numbers">
+                        <option>Display Number</option>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                        <option>6</option>
+                    </select>
+                    <!-- btn random-->
+                    <div class="btn_randomize_breed_image">
+                        <button id="random">Randomize Breed Image Display</button>
+                    </div>
+               </form>
+            </div>
+        </div>
+    </section><!--end select dropdown-->
+ 
+
+    <!-- hound breeds -->
+    <section>
+        <div id="hound-breeds">
+            <div class="container">
+                <div class="hound-breeds">
+                    <h2 id="hound_header">Hound Breeds</h2>
+                    <div class="hound_breed_cards dog-card">
+                        <img src="./src/img/unsplash_WX4i1Jq_o0Y.png" alt="image">   
+                        <img src="./src/img/unsplash_ybHtKz5He9Y.png" alt="image">                                                
+                        <img src="./src/img/unsplash_brFsZ7qszSY.png" alt="image">                                                           
+                        <img src="./src/img/unsplash_9Iod_2fmhu4.png" alt="image">                                                           
+                        <img src="./src/img/unsplash_mx0DEnfYxic.png" alt="image">                                                           
+                        <img src="./src/img/unsplash_w39PTDxKiK8.png" alt="image">                                                           
+                        <img src="./src/img/unsplash_JBrbzg5N7Go.png" alt="image">                                                           
+                        <img src="./src/img/unsplash_brFsZ7qszSY.png" alt="image">                                                           
+                        <img src="./src/img/unsplash_S2Bilhk84Bo.png" alt="image">                                                           
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section><!--end hound-->
+
+
+    <!-- footer -->
+    <section>
+        <div id="footer">
+            <div class="container">
+                <div class="footer-content">
+                    <div class="footer-logo">
+                       <img src="./src/public/svgs/footer.svg" alt="svg">
+                       <p>DogHub</p>
+                       <h2>The Dogs API was made by dog.Ceo, you could buy the author a dog treat Via this link <a href="https://www.paypal.com/paypalme/dogapi">https://www.paypal.com/paypalme/dogapi</a>, you could also View the project GithubVia this link <a href="https://github.com/ElliottLandsborough/dog-ceo-api">https://github.com/ElliottLandsborough/dog-ceo-api</a></h2>
+                    </div>
+                    <div class="footer-header footer_main-main Popular">
+                        <h1>Popular</h1>
+                        <div class="popular-list">
+                            <li><a href="#">Categories</a></li>
+                            <li><a href="#">New Arrivals</a></li>
+                            <li><a href="#">Popular</a></li>
+                        </div>
+                    </div>
+                    <div class="footer-header footer_main-main breed-footer">
+                        <h1>Breeds</h1>
+                        <div class="breed-footer-list">
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                            <li><a href="#">FAQ</a></li>
+                        </div>
+                    </div>
+                    <div class="footer-header footer_main-main join-newsletter">
+                        <h1>Join Newsletter</h1>
+                        <p>To learn more and get major updates, subscribe to our newsletter</p>
+                       <form id="emailForm">
+                           <input type="email" id="enter-your-email" placeholder="Enter Your Email Address" required>
+                           <button type="submit">
+                               <img src="./src/img/Group.png" alt="png">
+                            </button>
+                       </form>
+                    </div>
+                </div>
+                <!-- down footer -->
+                <div class="down-footer">
+                    <div class="down-footer-menu">
+                        <div class="primary">
+                            <h2><span>&copy;</span>2021 wizsullivan</h2>
+                        </div>
+                        <div class="primary">
+                           <a class="privacy" href="#">Privacy Policy</a>
+                        </div>
+                        <div class="primary">
+                           <a class="term-service" href="#">Terms of service</a>
+                        </div>
+                    </div>
+                    <div class="footer-all-down">
+                        <div class="language">
+                            <h1>Language</h1>
+                            <select>
+                                <option>English</option>
+                            </select>
+                        </div>
+                        <div class="follow">
+                            <h1>Follow Us</h1>
+                            <div class="follow-link">
+                                <span><a href="https://www.twitter.com"><img src="./src/icon/Vector.png" alt="png"></a></span>
+                                <span><a href="https://www.instagram.com"><img src="./src/icon/Group (1).png" alt="png"></a></span>
+                                <span><a href="#"><img src="./src/icon/Vector (3).png" alt="png"></a></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section><!--end footer-->
+
+    <script src="src/js/index.js"></script>
+    <script src="src/js/date.js"></script>
+</body>
+</html>

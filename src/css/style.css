@@ -1,0 +1,38 @@
+@import url('./nav.css');
+@import url('./dog-breeds.css');
+@import url('./hound-breeds.css');
+@import url('./select-drop-down.css');
+@import url('./footer.css');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 600;
+    scroll-behavior: smooth;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+
+
+
+
+
+
+
+
+
