@@ -1,7 +1,6 @@
-@import url('./nav.css');
-@import url('./dog-breeds.css');
-@import url('./hound-breeds.css');
-@import url('./select-drop-down.css');
+@import url('./navabar.css');
+@import url('./dogShowcase.css');
+@import url('./dogSelect.css');
 @import url('./footer.css');
 
 
@@ -11,28 +10,19 @@
     box-sizing: border-box;
 }
 
+
 html,
 body {
-    font-family: Inter;
-    font-style: normal;
-    font-weight: 600;
-    scroll-behavior: smooth;
-    overflow-y: scroll;
+    font-family: 'Inter';
+    /* overflow-y: scroll; */
     overflow-x: hidden;
+    scroll-behavior: smooth;
+    background: #E5E5E5;
 }
+
+
 
 .container {
     max-width: 1200px;
     margin: 0 auto;
 }
-
-
-
-
-
-
-
-
-
-
-

@@ -1,0 +1,94 @@
+#dogSelect {
+    background: #FFFFFF;
+    height: 100%;
+    width: 100%;
+    padding: 80px 0;
+}
+
+.dogSelect_content .dog_forms {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.dogSelect_content .dog_select > select {
+    margin: 191px 0px 0px 15px;
+    background: #FFFFFF;
+    border: 1px solid #000000;
+    box-sizing: border-box;
+    width: 173px;
+    height: 48px;
+    outline: none;
+    cursor: pointer;
+    padding: 5px 5px;
+    font-family: 'Inter';
+    font-style: normal;
+    color: #000000;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+}
+
+.dog_select > select:focus {
+    border-color: turquoise;
+}
+
+.reandon {
+    margin-top: 192px;
+}
+
+.reandon > button {
+    width: 264px;
+    height: 46px;
+    background: #000000;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-family: 'Inter';
+    border: none;
+    outline: none;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+
+}
+
+
+
+/* result */
+.hound_content_list .houndHeader {
+    padding-top: 57px;
+    padding-left: 19px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 58px;
+    text-transform: capitalize;
+    color: #000000;
+}
+
+
+.hound_content_list .dog_cards {
+    margin-left: 20px;
+    /* margin-top: 29px; */
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    
+}
+
+.hound_content_list .dog_cards img {
+    margin: 29px 0px 0px 0px;
+    width: 350px;
+    
+}
+
+/* .hound_content_list .dog_cards > p {
+   color: #FFFFFF;
+   position: relative;
+   top: -230px;
+   left: 90px;
+} */
+
+
+

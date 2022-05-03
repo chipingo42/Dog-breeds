@@ -1,65 +1,50 @@
 #footer {
+    background: #ffffff;
+    height: 500px;
+    width: 100%;
     border: 1px solid #E3E7EE;
-    margin-top: 220px;
-    height: 530px;
-    background: #fafeff;
 }
 
-.footer-content {
+
+.footer_content {
     display: flex;
     justify-content: space-between;
 }
 
-
-.footer-content .footer-logo img {
-    position: relative;
-    top: 111px;
-    width: 40px;
-    height: 36px;
+.footer_logo > img {
+    margin-top: 83px;
 }
 
-.footer-content .footer-logo p{
-    width: 95px;
-    height: 29px;
-    position: relative;
-    left: 47px;
-    top: 72px;
-
-    font-family: Inter;
+.footer_logo > h1 {
+    margin-top: -36px;
+    padding-left: 45px;
+    font-family: 'Inter';
     font-style: normal;
     font-weight: 600;
     font-size: 24px;
     line-height: 29px;
+    color: #000000;
 }
 
-.footer-content .footer-logo  h2 {
-    width: 317px;
-    height: 120px;
-    position: relative;
-    top: 100px;
-
-    font-family: Inter;
+.footer_logo > p {
+    font-family: 'Inter';
     font-style: normal;
-    font-weight: normal;
+    font-weight: 400;
     font-size: 14px;
+    width: 330px;
     line-height: 20px;
+    padding-top: 32px;
+    color: #5F718C;
 }
 
 
 /* footer-header */
 .footer-header {
-    position: relative;
-    top: 120px;
-    
+    padding-top: 90px;
 }
 
-/* Popular */
-.Popular h1 {
-    width: 67px;
-    height: 22px;
-    margin-left: 40px;
-
-    font-family: Inter;
+.footer-header > h1 {
+    font-family: 'Inter';
     font-style: normal;
     font-weight: 600;
     font-size: 18px;
@@ -67,107 +52,28 @@
     color: #000000;
 }
 
-.Popular .popular-list {
-    position: relative;
-    top: 22px;
-    left: 40px;
+.footer-header .primary {
+    padding-top: 30px;
 }
 
-.Popular .popular-list li {
-   list-style: none;
-   padding: 7px 0;
-}
-
-.Popular .popular-list li a {
-    width: 74px;
-    height: 17px;
-    text-decoration: none;
-    font-family: Inter;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 17px;
-    color: #5F718C;
-}
-
-.Popular .popular-list li a :hover {
-    text-decoration: underline;
-}
-
-
-
-
-/* breed-footer */
-.breed-footer h1 {
-    width: 84px;
-    height: 17px;
-    position: relative;
-    /* left: -20px; */
-
-    font-family: Inter;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 18px;
-    line-height: 22px;
-    color: #000000;
-}
-
-.breed-footer .breed-footer-list {
-    position: relative;
-    top: 22px;
-    /* left: -20px; */
-}
-.breed-footer .breed-footer-list li {
-    list-style: none;
+.footer-header .primary li {
     padding: 7px 0;
-
 }
-.breed-footer .breed-footer-list li a{
-    width: 74px;
-    height: 17px;
+
+.footer-header .primary a {
+   list-style: none;
+   font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;      
+    color: #5F718C;
     text-decoration: none;
-    font-family: Inter;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 17px;
-    color: #5F718C;
-    transition: all 0.5s ease-in;
-    transition: background;
 }
 
-.popular-list li a:hover,
-.breed-footer-list li a:hover  {
-    text-decoration: underline;
-    color: #97A8C2;
-}
-
-
-
-
-/* join-newsletter */
-.join-newsletter h1 {
-    position: relative;
-    /* left: -80px; */
-    width: 137px;
-    height: 22px;
-
-    font-family: Inter;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 18px;
-    line-height: 22px;
-    color: #000000;
-}
-
-.join-newsletter p {
-    position: relative;
-    top: 20px;
-    /* left: -70px; */
+.footer-header .primary > p {
     width: 272px;
-    height: 34px;
-
-    font-family: Inter;
+    font-family: 'Inter';
     font-style: normal;
     font-weight: 500;
     font-size: 14px;
@@ -175,480 +81,39 @@
     color: #5F718C;
 }
 
-#emailForm {
+
+/* form */
+.emailForm {
+    margin-top: 26px;
     position: relative;
-    top: 40px;
-    /* left: -70px; */
 }
 
-#emailForm input {
-    display: inline-block;
-    cursor: pointer;
+.emailForm > input {
     width: 304px;
     height: 48px;
-
+    background: #FFFFFF;
     border: 2px solid #E3E7EE;
     box-sizing: border-box;
     border-radius: 30px;
-    padding-left: 18px;
-}
-
-#emailForm input:focus {
+    display: inline-block;
+    cursor: pointer;
+    padding-left: 15px;
     outline: none;
 }
-
-#emailForm input::placeholder {
-   width: 166px;
-   height: 17px;
-
-   font-family: Inter;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 17px;
-    color: #97A8C2;
-}
-
-#emailForm button {
+.emailForm > button {
     position: absolute;
-    left: 259px;
-    top: 4px;
-    width: 40px;
-    height: 40px;
-    clip-path: circle();
-    background: #000000;
-}
-
-
-/* down-footer */
-.down-footer {
-    position: relative;
-    top: 180px;
-    border-top: 1px solid #E3E7EE;
-    display: flex;
-    justify-content: space-between;
-}
-
-.down-footer .down-footer-menu {
-    position: relative;
-    top: 77px;
-    display: flex;
-    justify-content: space-between;
-}
-
-/* primary */
-.down-footer .down-footer-menu .primary {
-   width: 200px;
-}
-.down-footer .down-footer-menu .primary h2 {
-    width: 130px;
-    height: 17px;
-    position: relative;
-    left: -4px;
-
-    font-family: Inter;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 17px;
-}
-.down-footer .down-footer-menu .primary h2 span {
-    position: relative;
-    left: -7px;
-    width: 16px;
-}
-
-
-.down-footer .down-footer-menu .primary a {
-    position: relative;
-    top: -5px;
-    left: -60px;
-   text-decoration: none;
-   border-bottom: 1px solid #343434;
-   padding: 0px 22px 0px 0px;
-   font-family: Inter;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 17px;
-    width: 94px;
-    height: 17px;
-    color: #343434;
-}
-
-.down-footer .down-footer-menu .primary .term-service {
-    position: relative;
-    left: -120px;
+    margin-top: 4px;
+    right: 4px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    display: inline-block;
+    background: none;
 }
 
 
 
-/* footer-all-down */
-.footer-all-down {
-    display: flex;
-    justify-content: space-between;
-    position: relative;
-    top: 40px;
+/* down_footer */
+.down_footer {
+    border-bottom: 1px solid #E3E7EE;
 }
-
-/* language */
-.language {
-    position: relative;
-    left: -150px;
-}
-
-.language h1 {
-    width: 67px;
-    height: 17px;
-
-    font-family: Inter;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 17px;
-}
-
-.language select  {
-    width: 304px;
-    height: 40px;
-    position: relative;
-    top: 10px;
-
-    border: 1.2px solid #70788C;
-    box-sizing: border-box;
-    border-radius: 10px;
-    /* margin-left: -30px; */
-}
-
-
-
-.language select:focus  {
-   outline: none;
-}
-
-
-/* follow */
-.follow {
-    position: relative;
-    top: 20px;
-}
-.follow h1 {
-    position: relative;
-    top: -20px;
-    left: -30px;
-   width: 65px;
-   height: 17px;
-
-    font-family: Inter;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 17px;
-}
-
-.follow span:first-child {
-    position: relative;
-    left: -30px;
-}
-.follow span:nth-child(2) {
-    position: relative;
-    left: -18px;
-}
-.follow span:last-child {
-    position: relative;
-    left: 3px;
-    top: -6px;
-}
-
-
-@media screen and (max-width: 768px) {
-    #footer {
-        height: 1250px;
-    }
-    .footer-content {
-        display: block;
-        margin: 0 10px;
-    }
-
-    .footer-content .footer-logo img{
-        width: 80px;
-        height: 70px;
-    }
-    .footer-content .footer-logo  p {
-        position: relative;
-        left: 96px;
-        font-size: 27px;
-        top: 50px;
-    }
-    .footer-content .footer-logo  h2 {
-        margin-left: 10px;
-        font-size: 20px;
-        width: 500px;
-    }
-
-
-    /* footer-header */
-    .footer-header {
-       margin: 40px 10px;
-    }
-
-    /* footer_main-main */
-    .footer_main-main {
-        position: relative;
-        top: 90px;
-    }
-
-
-    /* Popular */
-    .Popular h1 {
-        margin-left: 0px;
-    }
-    .Popular h1, 
-    .breed-footer h1,
-    .join-newsletter h1 {
-        font-size: 27px;
-        width: 400px;
-    }
-    .popular-list li,
-    .breed-footer-list li  {
-       padding: 2px 0;
-    }
-   
-    .join-newsletter p {
-        font-size: 20px;
-        width: 500px;
-    }
-    .Popular .popular-list {
-        position: relative;
-        left: 0px;
-    }
-
-
-
-    #emailForm input {
-        width: 500px;
-        height: 50px;
-        margin-top: 18px;
-    }
-    #emailForm input::placeholder  {
-        font-size: 17px;
-        width: 250px;
-    }
-    #emailForm button {
-       position: absolute;
-       left: 455px;
-       top: 23px;
-    }
-
-
-    /* down-footer */
-    .down-footer .down-footer-menu  {
-        margin-top: 200px;
-    }
-    /* primary */
-    .down-footer .down-footer-menu .primary {
-        position: relative;
-        left: 70px;
-    }
-    .down-footer .down-footer-menu .primary h2 {
-        font-size: 20px;
-        width: 200px;
-        top: -2px;
-        left: -30px;
-    }
-    .down-footer .down-footer-menu .primary a  {
-        padding: 0px 0px 9px 0px;
-    }
-    .down-footer .down-footer-menu .primary .privacy {
-       margin-left: 30px;
-       font-size: 18px;
-    }
-    .down-footer .down-footer-menu .primary .term-service  {
-        margin-left: 30px;
-        font-size: 18px;
-    }
-    
-    
-    /* footer-all-down */
-    .footer-all-down {
-        position: relative;
-        left: -410px;
-        height: 20px;
-    }
-
-
-    /* language */
-    .language {
-        position: relative;
-        top: 100px;
-        left: -170px;
-    }
-    .language h1 {
-        font-size: 20px;
-    }
-    .language select  {
-        margin-top: 8px;
-    }
-
-
-
-    /* follow */
-    .follow {
-        position: relative;
-        top: 20px;
-        left: -440px;
-    }
-    .follow h1 {
-        font-size: 20px;
-        width: 190px;
-    }
-    /* follow-link */
-    .follow-link {
-        margin-top: 10px;
-    }
-
-
-    @media screen and (max-width: 500px) {
-        #footer {
-            height: 1070px;
-        }
-        .footer-content  {
-            margin: 0 14px;
-        }
-        .footer-content .footer-logo img {
-           position: relative;
-           top: 25px;
-           width: 40px;
-           height: 36px;
-        } 
-
-        .footer-content .footer-logo  p {
-            position: relative;
-            left: 49px;
-            top: -10px;
-        }
-
-        .footer-content .footer-logo  h2  {
-            width: 317px;
-            height: 100px;
-            position: relative;
-            top: 11px;
-            font-size: 13px;
-            line-height: 20px;
-        }
-
-        /* footer-header */
-        .footer-header {
-            margin: 40px 10px;
-        }
-
-
-        /* footer_main-main */
-        .footer_main-main {
-            position: relative;
-            top: 20px;
-        }
-
-        .join-newsletter p {
-            font-size: 13px;
-            width: 299px;
-            height: 32px;
-        }
-
-        #emailForm input {
-            width: 321px;
-            height: 48px;
-        }
-
-        #emailForm button {
-            position: absolute;
-            left: 275px;
-            top: 22px;
-        }
-
-        /* down-footer */
-        .down-footer {
-            position: relative;
-            top: 69px;
-        }
-
-        .language {
-            margin-top: 20px;
-        }
-
-        .down-footer .down-footer-menu .primary h2 {
-            font-size: 11px;
-            /* margin-top: 3px; */
-        }
-
-        .down-footer .down-footer-menu .primary span {
-            font-size: 11px;
-            margin-top: 3px;
-           height: 50px;
-           width:  150px;
-        }
-
-        .down-footer .down-footer-menu .primary a  {
-            padding: 0px 0px 3px 0px;
-        }
-
-        .down-footer .down-footer-menu .primary .privacy {
-            margin-left: -60px;
-            font-size: 11px;
-        }
-        .down-footer .down-footer-menu .primary .term-service  {
-            margin-left: -120px;
-            font-size: 11px;
-        }
-
-        .footer-all-down {
-          height: 20px;
-        }
-    
-        
-        .follow h1 {
-           width: 120px;
-        }
-    }
-
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

@@ -1,0 +1,74 @@
+#dogShowcase {
+    background: #ffffff;
+    height: 398px;
+    width: 100%;
+}
+
+
+.dogImageContent > img {
+    margin-top: 187px;
+    display: inline-flex;
+    width: 30%;
+    margin-left: 340px;
+}
+
+.dogImageContent > p {
+    padding-top: 32px;
+    padding-left: 280px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 96px;
+    line-height: 116px;
+    color: #000000;
+}
+
+@media (max-width: 817px) {
+    .dogImageContent img {
+        margin-left: 270px;
+    }
+    .dogImageContent > p {
+        font-size: 60px;
+       padding-left: 230px;
+       margin-top: -40px;
+    }
+}
+
+@media (max-width: 768px) {
+    .dogImageContent img {
+        margin-top: 187px;
+        margin-left: 200px;
+    }
+
+    .dogImageContent > p {
+        padding-top: 20px;
+        padding-left: 130px;
+        font-size: 50px;
+    }
+}
+@media screen and (max-width: 500px) {
+    #dogShowcase {
+        height: 320px;
+    }
+    .dogImageContent > img {
+        margin-top: 129px;
+        margin-left: 70px;
+        width: 58%;
+    }
+
+    .dogImageContent > p {
+        margin-top: -49px;
+        padding-left: 30px;
+        width: 700px;
+    }
+}
+
+@media screen and (max-width: 325px) {
+    .dogImageContent > p {
+      width: 400px;
+       
+    }
+}
+
+
+

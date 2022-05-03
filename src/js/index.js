@@ -70,7 +70,7 @@ const getListOfBreeds = async () => {
   try {
     const data = await fetch(baseUrl)
     const res = await data.json();
-      // console.log(res.message)
+    // console.log(res.message)
     selectCategory(res.message)
   } catch (error) {
     console.error(error.message, 'Not found.')
