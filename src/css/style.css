@@ -1,6 +1,7 @@
 @import url('./navabar.css');
 @import url('./dogShowcase.css');
 @import url('./dogSelect.css');
+@import url('./card_result.css');
 @import url('./footer.css');
 
 
@@ -25,4 +26,8 @@ body {
 .container {
     max-width: 1200px;
     margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
 }

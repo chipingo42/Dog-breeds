@@ -1,14 +1,16 @@
 #footer {
     background:#FDFEFF;
-    height: 520px;
+    height: 100%;
     width: 100%;
     border: 1px solid #E3E7EE;
+    padding: 150px 0;
 }
 
 
 .footer_content {
     display: flex;
     justify-content: space-between;
+    margin-top: -180px;
 }
 
 .footer_logo > img {
@@ -89,7 +91,7 @@
 }
 
 .emailForm > input {
-    width: 304px;
+    width: 100%;
     height: 48px;
     background: #FFFFFF;
     border: 2px solid #E3E7EE;
@@ -101,9 +103,9 @@
     outline: none;
 }
 .emailForm > button {
-    position: absolute;
-    margin-top: 4px;
-    right: 4px;
+    position: relative;
+    top: -44px;
+    left: 226px;
     border: none;
     outline: none;
     cursor: pointer;
@@ -111,13 +113,10 @@
     background: none;
 }
 
-
-
 /* down_footer */
 .down_footer {
     border-bottom: 1px solid #E3E7EE;
     margin-top: 14px;
-    
 }
 
 .down_footer_content_list_flex {
@@ -136,6 +135,7 @@
     font-size: 14px;
     color: #000000;
 }
+
 
 /* privacy_and_policy */
 .privacy_and_policy {
@@ -208,4 +208,175 @@
 
 .links img {
     margin: 0 27px;
+}
+
+@media screen and (max-width: 942px) {
+    .links img {
+        margin: 0 10px;
+    }
+
+    .privacy_and_policy > li {
+        margin-right: 47px;
+        padding: 0px 10px 20px 0px;
+    }
+}
+
+@media screen and (max-width: 818px) {
+    .emailForm > button {
+       position: absolute;
+       top: 4px;
+       right: 5px;
+    }
+
+    .footer-header .primary li {
+        padding: 7px 1px;
+    }
+
+    .footer-header .primary a {
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width: 830px) {
+    .links img {
+        margin: 0 6px;
+    }
+
+    .language {
+        display: block;
+        position: relative;
+        top: 110px;
+        left: -20px;
+    }
+    
+
+    .privacy_and_policy > li {
+        margin-right: 47px;
+        padding: 0px 0px 20px 0px;
+    }
+
+    .privacy_and_policy > li {
+        margin-right: 37px;
+    }
+    
+}
+
+
+@media screen and (max-width: 768px) { 
+    #footer {
+        padding: 290px 0;
+    }
+    .footer_content {
+        display: block;
+        margin-top: -330px;
+        margin-left: 14px;
+    }
+
+    .footer-header {
+        padding-top: 20px;
+    }
+
+    .footer-header .primary {
+        padding-top: 7px;
+    }
+
+    .footer-header .primary li {
+        padding: 5px 0;
+    }
+    .footer-header .primary a,
+    .footer-header .primary > p {
+        font-size: 16px;
+    }
+     
+    .emailForm > input {
+        width: 70%;
+    }
+
+    .emailForm > button {
+        position: relative;
+        top: 16px;
+        left: -50px;
+    }
+
+    /* down footer */
+    .down_footer {
+        margin-top: -124px;
+    }
+    .down_footer_content_list_flex {
+        display: block;
+    }
+
+    .copyright {
+        position: relative;
+        top: 400px;
+        left: 13px;
+    }
+
+    .privacy_and_policy {
+        position: relative;
+        top: 378px;
+        left: 150px;
+    }
+
+    .language {
+        position: relative;
+        top: 260px;
+        left: 14px;
+    }
+
+    .language p {
+       position: relative;
+       top: -10px;
+    }
+
+    .follow_us p {
+        padding-left: 18px;
+    }
+    .follow_us .links {
+        margin-left: 7px;
+    }
+
+    .links img {
+        margin: 0 6px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    #footer {
+        padding: 249px 0;
+    }
+    .footer-header .primary a,
+    .footer-header .primary > p {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 13px;
+        line-height: 16px;
+    }
+     
+    .emailForm > input {
+        width: 83%
+    }
+
+    .follow_us .links {
+        margin-top: 16px;
+    }
+    .language {
+        position: relative;
+        top: 235px;
+    }
+    .copyright {
+        position: relative;
+        top: 370px;
+        left: 13px;
+    }
+
+    .privacy_and_policy {
+        position: relative;
+        top: 348px;
+        left: 136px;
+    }
+    .privacy_and_policy .term {
+        margin-left: -20px;
+    }
 }

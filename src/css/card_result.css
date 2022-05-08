@@ -1,0 +1,61 @@
+#result_dogs {
+    background: #FFFFFF;
+    height: 100%;
+    padding: 120px 0;
+}
+
+/* result */
+.hound_content_list .houndHeader {
+    padding-top: 57px;
+    padding-left: 19px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 58px;
+    text-transform: capitalize;
+    color: #000000;
+}
+
+
+.hound_content_list .dog_cards {
+    margin-left: 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    
+}
+
+.hound_content_list .dog_cards img {
+    margin: 29px 0px 0px 0px;
+    width: 350px;
+    
+}
+
+@media screen and (max-width: 768px) {
+    .hound_content_list .dog_cards {
+        margin-left: 6px;
+    }
+    .hound_content_list .dog_cards img {
+        margin: 20px 14px;
+        
+    }
+}
+
+
+@media screen and (max-width: 500px) {
+    #result_dogs {
+        background: yellow;
+        height: 20%;
+    }
+    .hound_content_list .dog_cards {
+        margin-left: 15px;
+    }
+
+    .hound_content_list .dog_cards img {
+        margin: 10px 0px;
+        width: 95%;
+        
+    }
+}
+

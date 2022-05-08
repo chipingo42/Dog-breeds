@@ -50,26 +50,28 @@
     <section>
         <div id="dogSelect">
             <div class="container">
-                <div class="dogSelect_content">
-                    <form class="dog_forms">
-                        <div class="dog_select">
-                            <select name="breed" id="breed" class="breed">
-                                <option>breed</option>
-                            </select>
-                            <select name="breed" id="Sub-breeds" class="breed">
-                                <option>Sub-breeds</option>
-                            </select>
-                            <select name="breed" id="disylayNumber" class="breed">
-                                <option>Display Number</option>
-                            </select>
-                        </div>
-                        <!-- random-btn -->
-                        <div class="reandon">
-                            <button type="button">Randomize Breed Image Display</button>
-                        </div>
-                    </form>
+                <div class="selecteForm">
+                    <div class="select_list">
+                        <select name="breed" id="breed" class="breed">
+                            <option>Breeds</option>
+                        </select>
+                        <select name="displayNumber" id="displayNumber" class="displayNumber">
+                            <option>Breeds</option>
+                        </select>
+                    </div>
+                    <!-- btn -->
+                    <div class="btn_random">
+                        <button type="button">Randomize Breed Image Display</button>
+                    </div>
                 </div>
-                <!-- result -->
+            </div>
+        </div>
+    </section>
+
+
+    <section>
+        <div id="result_dogs">
+            <div class="container">
                 <div class="hound_content_list">
                     <h1 class="houndHeader">Hound Breeds</h1>
                     <div class="dog_cards">
@@ -135,10 +137,9 @@
                         <div class="copyright">
                             &copy; 2021 wizsullivan
                         </div>
-                        <!-- Privacy Policy -->
                         <div class="privacy_and_policy">
-                            <li>Privacy Policy</li>
-                            <li>Terms of service</li>
+                            <li class="privacy_policy">Privacy Policy</li>
+                            <li class="term">Terms of service</li>
                         </div>
      
                         <div class="language">
