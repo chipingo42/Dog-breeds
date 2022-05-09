@@ -60,10 +60,13 @@
     }
 
     .dogImageContent p {
-        margin-top: -30px;
+        margin-top: -11px;
         font-size: 54px;
         padding-left: 10px;
         width: 400px;
+        font-weight: 600;
+        font-size: 54px;
+        line-height: 65px;
     }
 }
 
