@@ -369,6 +369,9 @@
         position: relative;
         top: 370px;
         left: 13px;
+        font-weight: 500;
+        font-size: 11px;
+        line-height: 13px;
     }
 
     .privacy_and_policy {
@@ -376,8 +379,11 @@
         top: 348px;
         left: 136px;
     }
-    .privacy_and_policy .term {
-        margin-left: -20px;
+
+    .privacy_and_policy > li {
+        font-weight: 500;
+        font-size: 11px;
+        line-height: 13px;
     }
 }
 
