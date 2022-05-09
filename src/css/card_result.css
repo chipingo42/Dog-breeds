@@ -45,17 +45,23 @@
 
 @media screen and (max-width: 500px) {
     #result_dogs {
-        background: yellow;
         height: 20%;
     }
+
+    .hound_content_list .houndHeader {
+        margin-top: -170px;
+        font-weight: 600;
+        font-size: 36px;
+        line-height: 44px;
+    }
+
     .hound_content_list .dog_cards {
         margin-left: 15px;
     }
 
     .hound_content_list .dog_cards img {
         margin: 10px 0px;
-        width: 95%;
-        
+        width: 95%; 
     }
 }
 

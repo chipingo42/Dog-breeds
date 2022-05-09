@@ -380,3 +380,17 @@
         margin-left: -20px;
     }
 }
+
+
+@media screen and (max-width: 278px) {
+    .emailForm > input {
+        width: 240px
+    }
+
+    .emailForm > button {
+        position: relative;
+        top: -44px;
+        left: 194px;
+    }
+
+}
