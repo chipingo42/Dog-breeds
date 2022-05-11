@@ -324,6 +324,11 @@
         left: 14px;
     }
 
+    
+    .language select {
+        width: 70%;
+    }
+
     .language p {
        position: relative;
        top: -10px;
@@ -364,6 +369,11 @@
     .language {
         position: relative;
         top: 235px;
+    }
+
+    
+    .language select {
+        width: 83%;
     }
     .copyright {
         position: relative;

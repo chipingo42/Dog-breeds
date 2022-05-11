@@ -5,7 +5,7 @@
 }
 
 /* result */
-.hound_content_list .houndHeader {
+.hound_content_list .houndWord {
     padding-top: 57px;
     padding-left: 19px;
     font-family: 'Inter';
@@ -48,11 +48,12 @@
         height: 20%;
     }
 
-    .hound_content_list .houndHeader {
+    .hound_content_list .houndWord {
         margin-top: -170px;
         font-weight: 600;
         font-size: 36px;
         line-height: 44px;
+        
     }
 
     .hound_content_list .dog_cards {
@@ -62,6 +63,13 @@
     .hound_content_list .dog_cards img {
         margin: 10px 0px;
         width: 95%; 
+    }
+}
+
+@media screen and (max-width: 239px) {
+    .hound_content_list .houndWord {
+        width: 240px;
+        font-size: 28px;
     }
 }
 
