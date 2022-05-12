@@ -24,7 +24,6 @@
 @media screen and (max-width: 808px) {
     .dogImageContent {
         width: 100%;
-        background: red;
         margin-left: -0px;
     }
     .dogImageContent img {
