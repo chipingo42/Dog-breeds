@@ -21,91 +21,51 @@
 }
 
 
-@media screen and (max-width: 806px) {
+@media screen and (max-width: 808px) {
     .dogImageContent {
         width: 100%;
-        margin-left: 80px;
+        background: red;
+        margin-left: -0px;
     }
     .dogImageContent img {
-        width: 200px;
-        margin-left: 190px;
+        width: 250px;
+        margin-left: 250px;
     }
     .dogImageContent p {
         font-size: 70px;
-        padding-left: 180px;
+        padding-left: 250px;
         width: 800px;
     }
 }
 
+@media screen and (max-width: 567px) {
+    .dogImageContent img {
+        margin-left: 120px;
+    }
 
-@media screen and (max-width: 768px) {
-    .dogImageContent {
-        width: 100%;
-        margin-left: 0px;
+    .dogImageContent p {
+        padding-left: 140px;
+        width: 800px;
     }
 }
 
 @media screen and (max-width: 500px) {
     .dogImageContent {
-        margin-top: -76px;
+        margin-top: -80px;
     }
     .dogImageContent img {
-        width: 240px;
-        margin-left: 59px;
+        margin-left: 60px;
+        width: 229px;
     }
 
     .dogImageContent p {
-        font-weight: 600;
-        font-size: 54px;
-        line-height: 65px;
         padding-left: 100px;
-        width: 500px;
-    }
-}
-
-
-/* @media screen and (max-width: 591px) {
-    .dogImageContent {
-        padding-top: 187px;
-        margin-left: 170px;
-    }
-
-    .dogImageContent img {
-        width: 300px;
-        margin-left: -40px;
-    }
-
-    .dogImageContent p {
-        font-size: 70px;
-        padding-left: 20px;
-        margin-top: -30px;
-    }
-} */
-
-
-/* 
-@media screen and (max-width: 500px) {
-    #dogShowcase {
-        height: 220px;
-    }
-
-    .dogImageContent {
-        padding-top: 100px;
-        margin-left: 80px;
-    }
-
-    .dogImageContent img {
-        width: 200px;
-        height: 40px;
-        margin-left: -10px;
-    }
-
-    .dogImageContent p {
+        width: 800px;
         font-weight: 600;
         font-size: 54px;
         line-height: 65px;
-        padding-top: 20px;
-        width: 303px;
-        margin-left: -60px;
     }
-} */
+
+}
+
+
