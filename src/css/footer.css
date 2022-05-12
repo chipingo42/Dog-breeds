@@ -116,7 +116,7 @@
 /* down_footer */
 .down_footer {
     border-bottom: 1px solid #E3E7EE;
-    margin-top: 14px;
+    margin-top: -74px;
 }
 
 .down_footer_content_list_flex {
@@ -234,6 +234,11 @@
 
     .footer-header .primary a {
         font-size: 13px;
+    }
+
+    .down_footer {
+        border-bottom: 1px solid #E3E7EE;
+        margin-top: -34px;
     }
 }
 
