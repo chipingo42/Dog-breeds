@@ -1,4 +1,5 @@
-const date = new Date;
+export const dateString = new Date;
 
-// passing date
-document.getElementById('update').innerHTML = date.toDateString();
+
+
+
