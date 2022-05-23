@@ -28,7 +28,8 @@
 
 .hound_content_list .dog_cards img {
     margin: 29px 0px 0px 0px;
-    width: 350px;
+    width: 377px;
+    height: 456px;
     
 }
 
@@ -38,6 +39,7 @@
     }
     .hound_content_list .dog_cards img {
         margin: 20px 14px;
+        width: 100%;
         
     }
 }

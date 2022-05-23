@@ -1,40 +1,60 @@
-const BaseUrl = 'https://dog.ceo/api/breeds/list';
-const selecBreed = document.getElementById('breed');
+const baseUrl = `https://dog.ceo/api/breeds/list`;
+const selectBreed = document.querySelector('.breed');
+const dogCard = document.querySelector('.dog_cards');
 
 
+// getAllData
 export const getListOfBreeds = async () => {
     try {
-        const res = await fetch(BaseUrl)
-        const data = await res.json();
-        // console.log(data.message);
-        createBreedList(data.message)
+        const data = await fetch(baseUrl)
+        const res = await data.json();
+        selectCategory(res.message)
     } catch (error) {
-      console.log(error.message, 'forbiden....')
+       console.error(error.message, 'Not found.')
     }
-}
+};
 
 
 
-// getBreedValue
+// getValue
 const getBreedName = (e) => {
-   e.preventDefault()
-   const value = e.target.value;
-   // get the value of dogCards
-   document.querySelector('.houndWord').innerHTML = value;    
-   console.log(value)
-}
-selecBreed.addEventListener('click', getBreedName);
+    const value = e.target.value;
+    document.querySelector('.houndWord').innerHTML  = value;
+    getBreedByName(value)
+};
+selectBreed.addEventListener('click', getBreedName);
 
 
 
+// get number of dog
+const getBreedByName = async (name, num = 12) => {
+    try {
+        const data = await fetch(`https://dog.ceo/api/breed/${name}/images/random/${num}`)
+        const image = await data.json()
+        //   console.log(image?.message)
+        randomImages(image?.message)
+
+    } catch (error) {
+       console.log(error.messge, 'Check again')
+    }
+};
 
 
-// select and options
-const createBreedList = (data) => {
-    const breedOption = `${data?.map((item) => {
-        return `<option>${item}</option>`
-    })}`
-    selecBreed.innerHTML = breedOption;
-}
+// Get dog image
+const randomImages = (data) => {
+    const dogImage = `
+        ${data?.map((url) => (`<img src=${url} alt="dog-image">`))}`
+    dogCard.innerHTML = dogImage;
+};
 
 
+
+// List of Breeds
+const selectCategory = (data) => {
+    const breedOption = `
+      ${data?.map((el) => (`<option value=${el}>${el}</option>`))}`
+   selectBreed.innerHTML = breedOption;
+};
+
+
+getListOfBreeds()

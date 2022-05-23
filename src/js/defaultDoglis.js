@@ -1,25 +1,28 @@
-const african = 'african'
-const dogCard = document.querySelector('.dog_cards')
+const africa = 'african';
+const dogCard = document.querySelector('.dog_cards');
 
-export const deFaultDogList = async () =>  {
+
+export const deFaultDogList = async () => {
     try {
-        const data = await fetch(`https://dog.ceo/api/breed/${african}/images/random/9`);
-        const defaultData = await data.json();
-        // console.log(defaultData.message)
-        randomImages(defaultData.message)
+      const data = await fetch(`https://dog.ceo/api/breed/${africa}/images/random/12`);
+      const defaultData = await data.json();
+      // console.log(defaultData.message)
+      randomImages(defaultData.message)
+  
     } catch (error) {
-        console.log(error.message, 'forbiden check again...')
+      console.error(error.message, 'forbiden try again...')
     }
-}
-
-
-// Get dog image
+};
+  
+ 
 const randomImages = (data) => {
-  const dogImge = ` 
-       ${data?.map((url) => {
-           return `<img src=${url} alt="dog-image">`
-       })}
-    `;
-    dogCard.innerHTML = dogImge;
-}
+    const dogImage = `
+          ${data?.map((url) => (`<img src=${url} alt="dog-image">`))}`
+    dogCard.innerHTML = dogImage;
+};
+  
 
+
+deFaultDogList()
+  
+  
