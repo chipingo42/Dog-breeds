@@ -4,6 +4,7 @@
     width: 100%;
     border: 1px solid #E3E7EE;
     position: fixed;
+    z-index: 2;
 }
 
 
@@ -44,6 +45,8 @@
     outline: none;
     border: none;
     color: #000000;
+    position: relative;
+    right: 12px;
 }
 
 @media screen and (max-width: 768px) {
