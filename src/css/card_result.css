@@ -35,13 +35,11 @@
 
 
 @media screen and (max-width: 768px) {
-    .hound_content_list .dog_cards {
+    .dog_cards {
         margin-left: 6px;
     }
-    .hound_content_list .dog_cards img {
-        margin: 20px 14px;
-        width: 100%;
-        
+    .dog_cards img {
+        width: 97%; 
     }
 }
 
@@ -58,14 +56,14 @@
         line-height: 44px;
         
     }
-
-    .hound_content_list .dog_cards {
+    .dog_cards {
         margin-left: 15px;
     }
 
-    .hound_content_list .dog_cards img {
-        margin: 10px 0px;
-        width: 95%; 
+    .dog_cards img {
+        /* margin: 10px 0px; */
+        width: 100%; 
+        margin-left: -15px;
     }
 }
 

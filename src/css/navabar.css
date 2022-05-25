@@ -70,6 +70,7 @@
 
     .nav_content .nav_btn > button {
        background: none;
-       padding-left: 30px;
+       position: relative;
+       left: 10px;
     }
 }

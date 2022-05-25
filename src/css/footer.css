@@ -373,7 +373,13 @@
     }
      
     .emailForm > input {
-        width: 83%
+        width: 90%
+    }
+
+    .emailForm > button {
+        position: relative;
+        top: -44px;
+        left: 265px;
     }
 
     .follow_us .links {
@@ -383,8 +389,6 @@
         position: relative;
         top: 235px;
     }
-
-    
     .language select {
         width: 83%;
     }

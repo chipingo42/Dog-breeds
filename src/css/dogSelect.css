@@ -63,6 +63,7 @@
     }
 
     .btn_random button {
+        margin-left: 15px;
         width: 97%;
         height: 60px;
         margin-top: 19px;
