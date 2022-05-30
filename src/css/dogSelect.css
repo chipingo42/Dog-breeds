@@ -45,6 +45,11 @@
     font-weight: 500;
     font-size: 14px;
     line-height: 17px;
+    cursor: pointer;
+}
+
+.btn_random button:hover {
+    box-shadow: 0 0 5px indianred;
 }
 
 

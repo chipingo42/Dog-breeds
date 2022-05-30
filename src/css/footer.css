@@ -1,9 +1,9 @@
 #footer {
     background:#FDFEFF;
-    height: 100%;
+    height: 430px;
     width: 100%;
     border: 1px solid #E3E7EE;
-    padding: 150px 0;
+    padding: 160px 0;
 }
 
 
@@ -91,6 +91,9 @@
 }
 
 .emailForm > input {
+    position: relative;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 48px;
     background: #FFFFFF;
@@ -102,10 +105,19 @@
     padding-left: 15px;
     outline: none;
 }
+
+.emailForm > input::placeholder {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: #97A8C2;
+}
 .emailForm > button {
-    position: relative;
-    top: -44px;
-    left: 226px;
+    position: absolute;
+    right: 6px;
+    top: 4px;
     border: none;
     outline: none;
     cursor: pointer;
@@ -113,61 +125,70 @@
     background: none;
 }
 
+
 /* down_footer */
 .down_footer {
-    border-bottom: 1px solid #E3E7EE;
-    margin-top: -74px;
+    border-top: 1px solid #E3E7EE;
+    margin-top: 50px;
 }
+
 
 .down_footer_content_list_flex {
     display: flex;
     justify-content: space-between;
 }
 
+.copyRight_and_privacys {
+   display: flex;
+   justify-content: space-between;
+}
 
-/* copyright */
-.copyright {
-    position: relative;
-    top: 140px;
+.privacy_and_service {
+    display: inline-flex;
+    margin-left: 47px;
+   
+}
+
+.privacy_and_service > li {
+    padding-top: 65.51px;
     font-family: 'Inter';
     font-style: normal;
     font-weight: 500;
     font-size: 14px;
-    color: #000000;
-}
-
-
-/* privacy_and_policy */
-.privacy_and_policy {
-    display: inline-flex;
-    position: relative;
-    top: 140px;
-}
-
-.privacy_and_policy > li {
-    margin-right: 47px;
+    line-height: 17px;
+    color: #343434;
     list-style: none;
+    margin: 0 30px;
+    height: 86px;
+    border-bottom: 1px solid #343434;
+}
+
+/* copyright */
+.copyright {
+    padding-top: 64.51px;
     font-family: 'Inter';
     font-style: normal;
     font-weight: 500;
     font-size: 14px;
     line-height: 17px;
     color: #000000;
-    border-bottom: 1px solid #343434;
-    padding: 0px 15px 20px 0px;
-    height: 10px;
 }
 
-/* language */
+
+/* language_and_follow */
+.language_and_follow {
+    display: flex;
+    justify-content: space-between;
+}
+
 .language {
-    display: block;
     position: relative;
-    top: 110px;
+    top: 0;
+    left: 0;
 }
 
-.language p {
-    position: relative;
-    top: -20px;
+.language > p {
+    padding-top: 29.51px;
     font-family: 'Inter';
     font-style: normal;
     font-weight: 500;
@@ -181,102 +202,99 @@
     height: 40px;
     background: #FFFFFF;
     border: 1.2px solid #70788C;
-    outline: none;
     border-radius: 10px;
+    margin-right: 50px;
+    margin-top: 10.51px;
+}
+
+
+/* follow_us */
+.follow_us {
+   margin-top: 23.51px;
+}
+
+.follow_us > p {
     font-family: 'Inter';
     font-style: normal;
     font-weight: 500;
     font-size: 14px;
     line-height: 17px;
-    color: #343434;
-    padding-left: 14px;
+    color: #000000;
 }
 
-
-/* Follow Us */
-.follow_us {
-    position: relative;
-    top: 90px;
-}
-
-.follow_us p {
-    padding-left: 22px;
-}
-
-.follow_us .links {
-    margin-top: 27px;
+.links {
+    margin-top: 20px;
 }
 
 .links img {
-    margin: 0 27px;
-    cursor: pointer;
+    margin: 0 10px;
 }
 
-@media screen and (max-width: 942px) {
-    .links img {
-        margin: 0 10px;
+
+
+
+@media screen and (max-width: 979px) {
+    .privacy_and_service {
+        margin-left: 20px;
+    }
+    .copyright,
+    .privacy_and_service > li,
+    .copyright,
+    .language > p ,
+    .follow_us > p  {
+        font-size: 12px;
     }
 
-    .privacy_and_policy > li {
-        margin-right: 47px;
-        padding: 0px 10px 20px 0px;
-    }
-}
-
-@media screen and (max-width: 818px) {
-    .emailForm > button {
-       position: absolute;
-       top: 4px;
-       right: 5px;
+    .privacy_and_service > li {
+        margin: 0 16px;
     }
 
-    .footer-header .primary li {
-        padding: 7px 1px;
-    }
-
-    .footer-header .primary a {
-        font-size: 13px;
-    }
-
-    .down_footer {
-        border-bottom: 1px solid #E3E7EE;
-        margin-top: -34px;
-    }
-}
-
-@media screen and (max-width: 830px) {
-    .links img {
-        margin: 0 6px;
-    }
-
-    .language {
-        display: block;
-        position: relative;
-        top: 110px;
-        left: -20px;
-    }
-    
-
-    .privacy_and_policy > li {
-        margin-right: 47px;
-        padding: 0px 0px 20px 0px;
-    }
-
-    .privacy_and_policy > li {
-        margin-right: 37px;
+    .language select  {
+        width: 250px;
     }
     
 }
 
+@media screen and (max-width: 814px) {
+    .language select  {
+        width: 200px;
+    }
 
-@media screen and (max-width: 768px) { 
+    .links img {
+        margin: 0 5px;
+    }
+}
+
+
+@media screen and (max-width: 768px)  {
     #footer {
-        padding: 290px 0;
+        height: 100%;
     }
     .footer_content {
         display: block;
-        margin-top: -330px;
-        margin-left: 14px;
+        margin-left: 15px;
+    }
+
+    .emailForm > input {
+        width: 98%;
+
+        position: relative;
+        top: 0;
+        left: 0;
+    }
+
+    .emailForm > button {
+        position: absolute;
+        right: 20px;
+    }
+
+    .down_footer {
+        margin-top: 20px;
+    }
+
+    .footer_logo > p {
+        font-size: 13px;
+        padding-top: 22px;
     }
 
     .footer-header {
@@ -284,146 +302,75 @@
     }
 
     .footer-header .primary {
-        padding-top: 7px;
+        padding-top: 5px;
     }
 
-    .footer-header .primary li {
-        padding: 5px 0;
-    }
-    .footer-header .primary a,
-    .footer-header .primary > p {
-        font-size: 16px;
-    }
-     
-    .emailForm > input {
-        width: 70%;
-    }
-
-    .emailForm > button {
-        position: relative;
-        top: 16px;
-        left: -50px;
-    }
-
-    /* down footer */
-    .down_footer {
-        margin-top: -124px;
-    }
-    .down_footer_content_list_flex {
+    .down_footer_content_list_flex,
+    .language_and_follow  {
         display: block;
     }
 
-    .copyright {
+    .follow_us {
+        margin-top: 23.51px;
         position: relative;
-        top: 400px;
-        left: 13px;
-    }
-
-    .privacy_and_policy {
-        position: relative;
-        top: 378px;
-        left: 150px;
+        bottom: 240px;
+        padding-left: 20px;
     }
 
     .language {
+        margin-left: 20px;
         position: relative;
-        top: 260px;
-        left: 14px;
+        top: -48px;
     }
 
-    
     .language select {
-        width: 70%;
+        width: 98%;
     }
 
-    .language p {
+  
+    .copyRight_and_privacys{
+        position: relative;
+        top: 200px;
+        padding-left: 20px;
+        display: block;
+    }
+
+    .privacy_and_service {
        position: relative;
-       top: -10px;
-    }
-
-    .follow_us p {
-        padding-left: 18px;
-    }
-    .follow_us .links {
-        margin-left: 7px;
-    }
-
-    .links img {
-        margin: 0 6px;
+       top: -88px;
+       margin-left: 130px;
+       /* background: red; */
     }
 }
+
 
 @media screen and (max-width: 500px) {
-    #footer {
-        padding: 249px 0;
+    .footer_logo > p {
+        width: 317px;
+        font-size: 13px;
     }
 
-    .footer_logo > img {
-        padding-top: 30px;
+    .footer_logo > h1 {
+        font-size: 18px;
     }
-    
 
     .footer-header .primary a,
-    .footer-header .primary > p {
-        font-family: 'Inter';
-        font-style: normal;
-        font-weight: 500;
+    .footer-header .primary > p   {
         font-size: 13px;
-        line-height: 16px;
     }
-     
-    .emailForm > input {
-        width: 90%
+
+    .footer-header .primary > p {
+        width: 299px;
+    }
+
+    .emailForm > input  {
+        width: 95%;
     }
 
     .emailForm > button {
-        position: relative;
-        top: -44px;
-        left: 265px;
+        position: absolute;
+        right: 23px;
+        top: 4px;
     }
-
-    .follow_us .links {
-        margin-top: 16px;
-    }
-    .language {
-        position: relative;
-        top: 235px;
-    }
-    .language select {
-        width: 83%;
-    }
-    .copyright {
-        position: relative;
-        top: 370px;
-        left: 13px;
-        font-weight: 500;
-        font-size: 11px;
-        line-height: 13px;
-    }
-
-    .privacy_and_policy {
-        position: relative;
-        top: 348px;
-        left: 136px;
-    }
-
-    .privacy_and_policy > li {
-        font-weight: 500;
-        font-size: 11px;
-        line-height: 13px;
-    }
-}
-
-
-@media screen and (max-width: 278px) {
-    .emailForm > input {
-        width: 240px
-    }
-
-    .emailForm > button {
-        position: relative;
-        top: -44px;
-        left: 194px;
-    }
-
+    
 }
