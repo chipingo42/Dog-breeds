@@ -353,19 +353,30 @@
     }
 
     .emailForm > input  {
-        width: 95%;
+        width: 321px;
     }
 
     .emailForm > button {
         position: absolute;
-        right: 23px;
+        right: 3px;
         top: 4px;
     }
 
     /* down footer */
     .down_footer {
         margin-top: 70px;
-        height: 250px;
+        height: 260px;
+    }
+    
+
+    .language select  {
+        width: 304px;
+    }
+
+    .privacy_and_service > li {
+        font-size: 13px;
+        line-height: 12px;
+        margin: 0 8px;
     }
     
 }
