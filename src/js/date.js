@@ -8,3 +8,4 @@ document.getElementById('date_update').innerHTML = dateString.toDateString();
 
 
 
+export default new Date;

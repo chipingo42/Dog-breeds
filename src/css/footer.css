@@ -1,16 +1,14 @@
 #footer {
     background:#FDFEFF;
-    height: 430px;
     width: 100%;
     border: 1px solid #E3E7EE;
-    padding: 160px 0;
+    padding: 20px 0;
 }
 
 
 .footer_content {
     display: flex;
     justify-content: space-between;
-    margin-top: -180px;
 }
 
 .footer_logo > img {
@@ -266,83 +264,74 @@
 }
 
 
-@media screen and (max-width: 768px)  {
-    #footer {
-        height: 100%;
-    }
+
+
+@media screen and (max-width: 768px) {
     .footer_content {
         display: block;
-        margin-left: 15px;
-    }
-
-    .emailForm > input {
-        width: 98%;
-
-        position: relative;
-        top: 0;
-        left: 0;
-    }
-
-    .emailForm > button {
-        position: absolute;
-        right: 20px;
-    }
-
-    .down_footer {
-        margin-top: 20px;
-    }
-
-    .footer_logo > p {
-        font-size: 13px;
-        padding-top: 22px;
+        margin: 0px 20px;
     }
 
     .footer-header {
         padding-top: 20px;
     }
-
     .footer-header .primary {
-        padding-top: 5px;
+        padding-top: 2px;
     }
 
+    .footer-header .primary li {
+        padding: 3px 0;
+    }
+
+    /* down footer */
+    .down_footer {
+        margin-top: 70px;
+        height: 270px;
+    }
+    .down_footer_content_list_flex {
+        margin: 0 20px;
+    }
     .down_footer_content_list_flex,
-    .language_and_follow  {
+    .language_and_follow{
         display: block;
     }
-
-    .follow_us {
-        margin-top: 23.51px;
-        position: relative;
-        bottom: 240px;
-        padding-left: 20px;
-    }
-
-    .language {
-        margin-left: 20px;
-        position: relative;
-        top: -48px;
-    }
-
-    .language select {
-        width: 98%;
-    }
-
-  
-    .copyRight_and_privacys{
-        position: relative;
-        top: 200px;
-        padding-left: 20px;
+    .copyRight_and_privacys {
         display: block;
+        background: red;
+        position: relative;
+        top: 0;
+        left: 0; 
+        height: 0;
+    }
+
+    .copyright,
+    .privacy_and_service {
+        position: absolute;
+        top: 170px;
     }
 
     .privacy_and_service {
-       position: relative;
-       top: -88px;
-       margin-left: 130px;
-       /* background: red; */
+        position: relative;
+        bottom: 88px;
+        left: 90px;
+    }
+
+    .follow_us {
+       margin-top: -50px;
+    }
+
+    .language  {
+        margin-top: 90px;
+        height: 0;
+    }
+    .language > p {
+        padding-top: 40px;
+    }
+
+    .language select  {
+        width: 100%;
     }
 }
-
 
 @media screen and (max-width: 500px) {
     .footer_logo > p {
@@ -371,6 +360,12 @@
         position: absolute;
         right: 23px;
         top: 4px;
+    }
+
+    /* down footer */
+    .down_footer {
+        margin-top: 70px;
+        height: 250px;
     }
     
 }

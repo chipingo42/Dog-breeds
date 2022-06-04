@@ -26,14 +26,13 @@ selectBreed.addEventListener('click', getBreedName);
 
 
 
-// get number of dog
+// get number of dogs
 const getBreedByName = async (name, num = 12) => {
     try {
         const data = await fetch(`https://dog.ceo/api/breed/${name}/images/random/${num}`)
         const image = await data.json()
         //   console.log(image?.message)
         randomImages(image?.message)
-
     } catch (error) {
        console.log(error.messge, 'Check again')
     }
@@ -46,7 +45,6 @@ const randomImages = (data) => {
         ${data?.map((url) => (`<img src=${url} alt="dog-image">`))}`
     dogCard.innerHTML = dogImage;
 };
-
 
 
 // List of Breeds
